@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marutinandan</title>
+    <link rel="stylesheet" href="css/tut1.css">
+    <style>
+        body{
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url('gray2.jpg') no-repeat center center/cover;
+            
+        }
+        .left{
+            position:absolute;
+            left : 22px;
+            top:22px;
+            display: inline-block ;
+           /* border: 2px solid red;*/
+        }
+        .left img{
+            width: 200px ;
+        }
+        .left div{
+            text-align: center;
+            font-size: 25px;
+            font-family: cursive;
+        }
+        .mid{
+            display:block;
+            width: 500px;
+            margin: 22px auto;
+           /* border: 2px solid rgb(190, 187, 187);*/
+        }
+        .right{
+            position:absolute;
+            right: 22px;
+            top:22px;
+            display: inline-block;
+           /* border: 2px solid rgb(191, 250, 43);*/
+        }
+        .navbar li{
+            display: inline-block ;
+            font-size: 20px;  
+        }
+        .navbar li a{
+            color: rgb(5, 5, 5);
+            padding: 15px;
+            text-decoration: none;
+         }
+         .navbar li a:hover,.navbar li a.active{
+            color: aqua;
+         }
+         .btn{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: rgb(7, 7, 7);
+            color: aliceblue;
+            cursor: pointer;
+         }
+         .btn:hover{
+            background-color: rgb(57, 56, 56);
+         }
+         .container{
+            border: 3px solid gray;
+            margin: 120px 70px;
+            padding:50px ;
+            width: 20%;
+            border-radius: 10px;
+            
+         }
+         .form-group input{
+            display: block;
+            width: 200px;
+            padding: 10px   ;
+            margin: 3px auto ;
+            border-radius: 14px;
+         }
+         .container button{
+            display: block;
+            width: 200px;
+            margin: 6px auto;
+         }
+        .container h1{
+            text-align: center;
+            color: rgb(63, 75, 85);
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="gada2.png" alt="">
+            <div>MARUTINANDAN</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href=""class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Call us now</button><button class="btn">Email us</button>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Join The best JYM</h1>
+            <form action="raj.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Enter your Phone No.">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+</body>
+</html>
